@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MenuItemsLeft } from "./MenuItemsLeft";
 import { MenuItemsRight } from "./MenuItemsRight";
 import logo from "../img/VavaGroundsLogoGradientCrop.png"
+import './Navbar.css'
 
 class Navbar extends Component {
     render() {
@@ -9,7 +10,7 @@ class Navbar extends Component {
             <nav className="NavbarItems">
                 <div className="menu-icon">
                 </div>
-                <ul>
+                <ul className="Navbar-menu-left">
                     {MenuItemsLeft.map((item, index) => {
                         return (
                             <li key={index}>
@@ -21,9 +22,9 @@ class Navbar extends Component {
                     })}
                 </ul>
                 <div className="navbar-logo">
-                    <img src={logo} height="200px" alt="Logo" />
+                    <a href={'#'}><img src={logo} height="150px" alt="Logo" /></a>
                 </div>
-                <ul>
+                <ul className="Navbar-menu-right">
                     {MenuItemsRight.map((item, index) => {
                         return (
                             <li key={index}>

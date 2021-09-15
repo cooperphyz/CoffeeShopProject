@@ -1,10 +1,5 @@
 export const MenuItemsRight = [
     {
-        title: 'About',
-        url: '#',
-        cName: 'nav-links'
-    },
-    {
         title: 'Our Story',
         url: '#',
         cName: 'nav-links'
@@ -12,6 +7,6 @@ export const MenuItemsRight = [
     {
         title: 'Contact',
         url: '#',
-        cName: 'nav-links-mobile'
+        cName: 'nav-links'
     }
 ]
