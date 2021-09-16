@@ -22,7 +22,7 @@ class Navbar extends Component {
                     })}
                 </ul>
                 <div className="navbar-logo">
-                    <a href={'#'}><img src={logo} height="150px" alt="Logo" /></a>
+                    <a href={'/#'}><img src={logo} height="150px" alt="Logo" /></a>
                 </div>
                 <ul className="Navbar-menu-right">
                     {MenuItemsRight.map((item, index) => {

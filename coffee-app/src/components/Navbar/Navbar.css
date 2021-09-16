@@ -1,37 +1,44 @@
 .NavbarItems {
-    background: linear-gradient(45deg, rgb(114, 76, 43) 0%, rgb(226, 198, 175) 100%);
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+  background: linear-gradient(
+    45deg,
+    rgb(129, 113, 97) 0%,
+    rgb(204, 195, 180) 100%
+  );
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-bottom: outset;
+  border-bottom-width: 5px;
+  border-bottom-color: #477362;
 }
 
 .Navbar-menu-left {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    justify-content: end;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
 }
 
 .Navbar-menu-right {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    justify-content: end;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
 }
 
 .nav-links {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
 }
 .nav-links:hover {
-    color: rgb(143, 43, 143);
-    text-decoration: none;
-    transition-duration: 1s;
+  color: rgb(170, 126, 211);
+  text-decoration: none;
+  transition-duration: 1s;
 }
