@@ -3,6 +3,7 @@ import Card from './Card'
 import './MenuOrganizer.css'
 import bgvideo from "../video/SlowBeans.m4v"
 import Banner from './Banner'
+import MenuSelector from './MenuSelector'
 
 import { Specialties } from "./menulists/specialties";
 import { Coffees } from "./menulists/coffees";
@@ -10,6 +11,10 @@ import { Coffees } from "./menulists/coffees";
 const Menu = () => {
     return (
         <div className='MenuComponents'>
+            <span className="spacer">Spacer</span>
+            <div className="menuselector">
+                <MenuSelector/>
+            </div>
             <span className="spacer">Spacer</span>
             <Banner heading="Seasonal Specials"></Banner>
             <div className="menulistings">
