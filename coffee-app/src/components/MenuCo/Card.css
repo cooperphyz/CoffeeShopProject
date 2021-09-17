@@ -3,12 +3,13 @@
   background: linear-gradient(
     45deg,
     rgb(170, 126, 211) 0%,
-    rgb(204, 195, 180) 100%
+    rgb(71, 115, 98) 100%
   );
   text-decoration: none;
   max-height: 350px;
   min-height: 350px;
   box-shadow: 2px 2px 1rem rgb(24, 23, 23);
+  border-radius: 5px;
 }
 .CardComponents:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

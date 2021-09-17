@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItemsLeft } from "./MenuItemsLeft";
 import { MenuItemsRight } from "./MenuItemsRight";
-import logo from "../img/VavaGroundsLogoGradientCrop.png"
+import logo from "../img/VavaGroundsLogoPlain2.png"
 import './Navbar.css'
 import { Link } from "react-router-dom";
 
