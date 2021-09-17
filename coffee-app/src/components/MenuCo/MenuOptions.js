@@ -1,47 +1,47 @@
 export const MenuOptions = [
     {
         title: 'Hot Coffee',
-        url: '/menu',
+        url: '/menu/hot-coffee',
         cName: 'nav-links-menu'
     },
     {
         title: 'Hot Tea',
-        url: '/menu',
+        url: '/menu/hot-tea',
         cName: 'nav-links-menu'
     },
     {
         title: 'Hot Drinks',
-        url: '/menu',
+        url: '/menu/hot-drinks',
         cName: 'nav-links-menu'
     },
     {
         title: 'Blended',
-        url: '/menu',
+        url: '/menu/blended',
         cName: 'nav-links-menu'
     },
     {
         title: 'Cold Coffee',
-        url: '/menu',
+        url: '/menu/cold-coffee',
         cName: 'nav-links-menu'
     },
     {
         title: 'Iced Tea',
-        url: '/menu',
+        url: '/menu/iced-tea',
         cName: 'nav-links-menu'
     },
     {
         title: 'Cold Drinks',
-        url: '/menu',
+        url: '/menu/cold-drinks',
         cName: 'nav-links-menu'
     },
     {
         title: 'Seasonal',
-        url: '/menu',
+        url: '/menu/seasonal',
         cName: 'nav-links-menu'
     },
     {
         title: 'Food',
-        url: '/menu',
+        url: '/menu/food',
         cName: 'nav-links-menu'
     }
 ]

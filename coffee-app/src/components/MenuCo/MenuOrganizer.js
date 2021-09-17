@@ -1,58 +1,19 @@
 import React from 'react'
 import Card from './Card'
 import './MenuOrganizer.css'
-import bgvideo from "../video/SlowBeans.m4v"
-import Banner from './Banner'
-import MenuSelector from './MenuSelector'
 
-import { Specialties } from "./menulists/specialties";
-import { Coffees } from "./menulists/coffees";
-
-const Menu = () => {
+const MenuOrganizer = (props) => {
     return (
         <div className='MenuComponents'>
-            <span className="spacer">Spacer</span>
-            <div className="menuselector">
-                <MenuSelector/>
-            </div>
-            <span className="spacer">Spacer</span>
-            <Banner heading="Seasonal Specials"></Banner>
             <div className="menulistings">
-            {Specialties.map((item, index) => {
+            {props.menutext.map((item, index) => {
                         return (
                             <Card name={item.drink} image={item.image} description={item.description}/>
                         )
                     })}
             </div>
-            <Banner heading="Classic Coffees"></Banner>
-            <div className="menulistings">
-            {Coffees.map((item, index) => {
-                        return (
-                            <Card name={item.drink} image={item.image} description={item.description}/>
-                        )
-                    })}
-            </div>
-            <Banner heading="Teas"></Banner>
-            <div className="menulistings">
-            {Specialties.map((item, index) => {
-                        return (
-                            <Card name={item.drink} image={item.image} description={item.description}/>
-                        )
-                    })}
-            </div>
-            <Banner heading="Other Drinks"></Banner>
-            <div className="menulistings">
-            {Specialties.map((item, index) => {
-                        return (
-                            <Card name={item.drink} image={item.image} description={item.description}/>
-                        )
-                    })}
-            </div>
-            <video autoPlay loop muted>
-                    <source src={bgvideo} type="video/mp4"/>
-            </video>
         </div>
     )
 }
 
-export default Menu
+export default MenuOrganizer

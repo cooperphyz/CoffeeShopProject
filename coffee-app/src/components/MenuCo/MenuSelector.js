@@ -1,6 +1,4 @@
 import React from 'react'
-import LeftDivider from '../img/LeftDivider.png'
-import RightDivider from '../img/RightDivider.png'
 import './MenuSelector.css'
 import {MenuOptions} from './MenuOptions'
 
