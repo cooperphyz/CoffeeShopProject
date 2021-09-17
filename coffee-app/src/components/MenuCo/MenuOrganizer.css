@@ -22,8 +22,9 @@ video {
 }
 
 .menulistings {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
-  align-content: center;
-  float: center;
+  column-gap: 8px;
 }

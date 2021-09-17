@@ -2,4 +2,25 @@
   width: 10%;
   background-color: gray;
   text-decoration: none;
+  max-height: 300px;
+  min-height: 300px;
+  box-shadow: 2px 2px 1rem rgb(24, 23, 23);
+}
+.CardComponents:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  animation: ease-in-out;
+}
+
+.cardheader {
+  margin: 1rem;
+}
+
+.cardimage {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  align-content: center;
+  overflow: hidden;
 }

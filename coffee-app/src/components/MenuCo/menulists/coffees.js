@@ -1,7 +1,7 @@
-export const Specialties = [
+export const Coffees = [
     {
         drink: 'Strawberry Lemonade',
-        image: 'https://i.pinimg.com/originals/19/26/28/1926283090e2db328caa4ab0bff74f9c.jpg',
+        image: '',
         description: 'nav-links'
     },
     {
@@ -16,6 +16,11 @@ export const Specialties = [
     },
     {
         drink: 'Raspberry Sweet Tea',
+        image: '',
+        description: 'nav-links'
+    },
+    {
+        drink: 'Mixed Berry Smoothie',
         image: '',
         description: 'nav-links'
     },
