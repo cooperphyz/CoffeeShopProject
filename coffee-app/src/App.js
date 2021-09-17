@@ -5,9 +5,14 @@ import About from './Pages/About';
 import Story from './Pages/Story';
 import Contact from './Pages/Contact';
 
+import Blended from './Pages/MenuPages/Blended'
+import ColdCoffee from './Pages/MenuPages/ColdCoffee'
+import ColdDrinks from './Pages/MenuPages/ColdDrinks'
+import Food from './Pages/MenuPages/Food'
 import HotCoffee from './Pages/MenuPages/HotCoffee'
+import HotDrinks from './Pages/MenuPages/HotDrinks'
 import HotTea from './Pages/MenuPages/HotTea'
-
+import IcedTea from './Pages/MenuPages/IcedTea'
 import Seasonal from './Pages/MenuPages/Seasonal'
 
 import Footer from './components/Footer/Footer';
@@ -24,9 +29,14 @@ function App() {
       <Route path ="/about" exact component={About} />
       <Route path ="/story" exact component={Story} />
       <Route path ="/contact" exact component={Contact} />
+      <Route path ="/menu/blended" exact component={Blended} />
+      <Route path ="/menu/cold-coffee" exact component={ColdCoffee} />
+      <Route path ="/menu/cold-drinks" exact component={ColdDrinks} />
+      <Route path ="/menu/food" exact component={Food} />
       <Route path ="/menu/hot-coffee" exact component={HotCoffee} />
+      <Route path ="/menu/hot-drinks" exact component={HotDrinks} />
       <Route path ="/menu/hot-tea" exact component={HotTea} />
-
+      <Route path ="/menu/iced-tea" exact component={IcedTea} />
       <Route path ="/menu/seasonal" exact component={Seasonal} />
       </Switch>
       <Footer />
