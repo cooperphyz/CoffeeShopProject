@@ -1,9 +1,13 @@
 .CardComponents {
-  width: 10%;
-  background-color: gray;
+  width: 15rem;
+  background: linear-gradient(
+    45deg,
+    rgb(170, 126, 211) 0%,
+    rgb(204, 195, 180) 100%
+  );
   text-decoration: none;
-  max-height: 300px;
-  min-height: 300px;
+  max-height: 350px;
+  min-height: 350px;
   box-shadow: 2px 2px 1rem rgb(24, 23, 23);
 }
 .CardComponents:hover {
@@ -12,15 +16,28 @@
   animation: ease-in-out;
 }
 
-.cardheader {
+.cardheader,
+h3 {
   margin: 1rem;
+  height: 4rem;
+  color: whitesmoke;
 }
 
 .cardimage {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 10rem;
   vertical-align: top;
   align-content: center;
   overflow: hidden;
+}
+
+.cardtext {
+  color: white;
+  clear: none;
+  padding: 0;
+  margin: 0.2rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  vertical-align: auto;
 }
