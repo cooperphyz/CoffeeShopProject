@@ -1,11 +1,29 @@
 .MenuComponents {
-  background: linear-gradient(
-    45deg,
-    rgb(170, 126, 211) 0%,
-    rgb(204, 195, 180) 100%
-  );
   margin-top: 0.1%;
   padding-bottom: 0.1%;
   padding-top: 0.1%;
   margin: 0px auto;
+  position: relative;
+  background-image: "../video/SlowBeans.m4v";
+}
+
+video {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.spacer {
+  visibility: none;
+}
+
+.menulistings {
+  display: inline-flex;
+  padding: 10px;
+  align-content: center;
+  float: center;
 }

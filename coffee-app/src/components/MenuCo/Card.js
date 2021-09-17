@@ -1,17 +1,17 @@
 import React from 'react'
 import './Card.css'
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className='CardComponents'>
             <div className="cardheader">
-                <h1>Gobbity</h1>
+                <h3>{props.name}</h3>
             </div>
             <div className="cardimage">
-                <img src ="" alt=""></img>
+                <img src={props.image} alt=""></img>
             </div>
             <div className="cardtext">
-                <p>Some dummy card text about coffee here</p>
+                <p>{props.description}</p>
             </div>
         </div>
     )
