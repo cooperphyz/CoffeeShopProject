@@ -1,0 +1,11 @@
+.MenuComponents {
+  background: linear-gradient(
+    45deg,
+    rgb(170, 126, 211) 0%,
+    rgb(204, 195, 180) 100%
+  );
+  margin-top: 0.1%;
+  padding-bottom: 0.1%;
+  padding-top: 0.1%;
+  margin: 0px auto;
+}

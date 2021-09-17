@@ -3,6 +3,7 @@ import { MenuItemsLeft } from "./MenuItemsLeft";
 import { MenuItemsRight } from "./MenuItemsRight";
 import logo from "../img/VavaGroundsLogoGradientCrop.png"
 import './Navbar.css'
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     render() {
@@ -14,23 +15,23 @@ class Navbar extends Component {
                     {MenuItemsLeft.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <Link className={item.cName} to={item.url}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}
                 </ul>
                 <div className="navbar-logo">
-                    <a href={'/#'}><img src={logo} height="150px" alt="Logo" /></a>
+                    <a href={'/'}><img src={logo} height="150px" alt="Logo" /></a>
                 </div>
                 <ul className="Navbar-menu-right">
                     {MenuItemsRight.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <Link className={item.cName} to={item.url}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}
