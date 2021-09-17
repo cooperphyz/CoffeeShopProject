@@ -1,32 +1,67 @@
-export const lattes = [
+export const brewedcoffees = [
     {
-        drink: 'Apple Spice Latte',
-        image: 'https://divascancook.com/wp-content/uploads/2013/11/IMG_2586_2.jpg',
-        description: 'Espresso and steamed milk with apple, cinnamon, and nutmeg'
+        drink: 'Americano',
+        image: 'https://coffeegearx.com/wp-content/uploads/2019/03/Americano.jpg',
+        description: 'Espresso shots topped with hot water create a light layer of crema',
+        calories:120,
+        fat:"0g",
+        cholesterol:"0mg",
+        sodium:"10mg",
+        carbohydrates:"3g",
+        sugar:"0g",
+        protein:"1g",
+        caffeine:"360mg"
     },
     {
-        drink: 'Pumpkin Spice Latte',
-        image: 'https://www.inspiredtaste.net/wp-content/uploads/2011/11/Pumpkin-Spice-Latte-Recipe-1200.jpg',
-        description: "Espresso and steamed milk with pumpkin, cinnamon, and nutmeg"
+        drink: 'Light Roast',
+        image: 'https://thumbs.dreamstime.com/b/choose-hot-coffee-focal-point-white-cup-next-to-bean-placed-wood-grain-table-top-natural-light-200673324.jpg',
+        description: "Lightly roasted coffee that's soft, mellow and flavorful",
+        calories:120,
+        fat:"0g",
+        cholesterol:"0mg",
+        sodium:"10mg",
+        carbohydrates:"3g",
+        sugar:"0g",
+        protein:"1g",
+        caffeine:"360mg"
     },
     {
-        drink: 'Hazelnut Latte',
-        image: 'https://i2.wp.com/www.meatlessmakeovers.com/wp-content/uploads/2020/01/Vegan-Hazelnut-Spiked-Latte-9-scaled.jpg?fit=2560%2C1707&ssl=1',
-        description: 'House-made hazelnut-praline-infused milk with espresso'
+        drink: 'Dark Roast',
+        image: 'https://www.gannett-cdn.com/presto/2018/11/07/USAT/d7a20a6b-8db2-42f8-9167-c1d07a047e51-GettyImages-493685876.jpg',
+        description: 'Full-bodied dark roast coffee with bold, robust flavors',
+        calories:120,
+        fat:"0g",
+        cholesterol:"0mg",
+        sodium:"10mg",
+        carbohydrates:"3g",
+        sugar:"0g",
+        protein:"1g",
+        caffeine:"360mg"
     },
     {
-        drink: 'Honey Oatmilk Latte',
-        image: 'http://www.howsweeteats.com/wp-content/uploads/2016/02/oatmeal-latte-I-howsweeteats.com-5.jpg',
-        description: 'Oatmilk and signature espresso with a hint of honey'
+        drink: 'Café au Lait',
+        image: 'https://foodimentary.com/wp-content/uploads/2017/02/caffecoffea-com.jpg',
+        description: 'A one:one combination of fresh-brewed coffee and steamed milk',
+        calories:120,
+        fat:"0g",
+        cholesterol:"0mg",
+        sodium:"10mg",
+        carbohydrates:"3g",
+        sugar:"0g",
+        protein:"1g",
+        caffeine:"360mg"
     },
     {
-        drink: 'Cinnamon Dolce',
-        image: 'https://bakingmischief.com/wp-content/uploads/2021/11/cinnamon-dolce-latte-image-683x1024.jpg',
-        description: 'Freshly steamed milk and cinnamon dolce with our classic espresso'
-    },
-    {
-        drink: 'Blonde Vanilla',
-        image: 'https://www.valyastasteofhome.com/wp-content/uploads/2017/02/IMG_3193.jpg',
-        description: 'Light roasted espresso with steamed milk and vanilla'
+        drink: 'Decaf Dark Roast',
+        image: 'https://2qaayg3yvidcn9imquz625sg-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/coffee.jpg',
+        description: 'Full-bodied dark roast that can be enjoyed any time of day',
+        calories:120,
+        fat:"0g",
+        cholesterol:"0mg",
+        sodium:"10mg",
+        carbohydrates:"3g",
+        sugar:"0g",
+        protein:"1g",
+        caffeine:"360mg"
     }
 ]

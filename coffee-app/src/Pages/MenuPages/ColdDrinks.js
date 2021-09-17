@@ -4,9 +4,7 @@ import MenuOrganizer from '../../components/MenuCo/MenuOrganizer';
 import Banner from '../../components/MenuCo/Banner'
 import MenuSelector from '../../components/MenuCo/MenuSelector'
 import bgvideo from "../../components/video/SlowBeans.m4v"
-import { brewedcoffees } from "./menulists/brewedcoffees";
-import { lattes } from "./menulists/lattes";
-
+import { Specialties } from './menulists/specialties'
 function HotCoffee() {
   return (
     <div className="App">
@@ -17,14 +15,14 @@ function HotCoffee() {
         </div>
         
         <div className="menuportion">
-        <Banner heading="Brewed"/>
-        <MenuOrganizer menutext={brewedcoffees}/>
-        <Banner heading="Lattes"/>
-        <MenuOrganizer menutext={lattes}/>
+        <Banner heading="Lemonade"/>
+        <MenuOrganizer menutext={Specialties}/>
+        <Banner heading="Smoothies"/>
+        <MenuOrganizer menutext={Specialties}/>
         <Banner heading="Macchiatos"/>
-        <MenuOrganizer menutext={brewedcoffees}/>
+        <MenuOrganizer menutext={Specialties}/>
         <Banner heading="Mochas"/>
-        <MenuOrganizer menutext={brewedcoffees}/>
+        <MenuOrganizer menutext={Specialties}/>
         </div>
         <video autoPlay loop muted>
             <source src={bgvideo} type="video/mp4"/>

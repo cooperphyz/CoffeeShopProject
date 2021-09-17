@@ -3,7 +3,7 @@ import '../../components/MenuCo/MenuSelector.css'
 import MenuOrganizer from '../../components/MenuCo/MenuOrganizer';
 import Banner from '../../components/MenuCo/Banner'
 import MenuSelector from '../../components/MenuCo/MenuSelector'
-import bgvideo from "../../components/video/SlowBeans.m4v"
+import bgvideo from "../../components/video/Lemonade.mp4"
 import { Specialties } from './menulists/specialties'
 
 function HotCoffee() {
@@ -16,9 +16,9 @@ function HotCoffee() {
         </div>
         
         <div className="menuportion">
-        <Banner heading="Brewed Coffees"/>
+        <Banner heading="Refreshers"/>
         <MenuOrganizer menutext={Specialties}/>
-        <Banner heading="Lattes"/>
+        <Banner heading="Iced Mixes"/>
         <MenuOrganizer menutext={Specialties}/>
         <Banner heading="Macchiatos"/>
         <MenuOrganizer menutext={Specialties}/>

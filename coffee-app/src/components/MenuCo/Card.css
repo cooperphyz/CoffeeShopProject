@@ -10,11 +10,15 @@
   min-height: 350px;
   box-shadow: 2px 2px 1rem rgb(24, 23, 23);
   border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
 }
 .CardComponents:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  animation: ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(231, 137, 209, 0.397);
+  transition: transform 0.5s ease-in-out;
+  animation: ease-out;
+  transform: scale(0.97);
+  transform: rotateY(180deg);
 }
 
 .cardheader,
@@ -41,4 +45,38 @@ h3 {
   height: 5rem;
   font-size: 1.8rem;
   vertical-align: auto;
+}
+
+.cardback {
+  transform: rotateY(180deg);
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 15rem;
+  background: linear-gradient(
+    45deg,
+    rgb(69, 52, 87) 0%,
+    rgb(138, 185, 167) 100%
+  );
+  text-decoration: none;
+  max-height: 350px;
+  min-height: 350px;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  color: whitesmoke;
+}
+
+.cardback h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.cardback h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

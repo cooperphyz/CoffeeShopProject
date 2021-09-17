@@ -8,7 +8,9 @@ const MenuOrganizer = (props) => {
             <div className="menulistings">
             {props.menutext.map((item, index) => {
                         return (
-                            <Card name={item.drink} image={item.image} description={item.description}/>
+                            <Card name={item.drink} image={item.image} description={item.description}
+                            calories={item.calories} fat={item.fat} cholesterol={item.cholesterol} sodium={item.sodium}
+                            carbohydrates={item.carbohydrates} sugar={item.sugar} caffeine={item.caffeine}/>
                         )
                     })}
             </div>
