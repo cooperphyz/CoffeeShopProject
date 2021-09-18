@@ -22,7 +22,7 @@ const Card = (props) => {
                 <h5>Sodium: {props.sodium}</h5>
                 <h5>Carbohydrates: {props.carbohydrates}</h5>
                 <h5>Sugar: {props.sugar}</h5>
-                <h5>Protein: {props.carbohydrates}</h5>
+                <h5>Protein: {props.protein}</h5>
                 <h5>Caffeine: {props.caffeine}</h5>
                 <h6>Substitutions are available upon request</h6>
                 <h6>*2,000 calories a day is used for general nutrtion</h6>

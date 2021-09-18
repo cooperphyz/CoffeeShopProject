@@ -1,17 +1,17 @@
 .NavbarItems {
   background: linear-gradient(
     45deg,
-    rgb(129, 113, 97) 0%,
-    rgb(204, 195, 180) 100%
+    rgb(71, 39, 114) 0%,
+    rgb(71, 115, 98) 100%
   );
   height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  border-bottom: outset;
-  border-bottom-width: 5px;
-  border-bottom-color: #477362;
+  border-bottom: inset;
+  border-bottom-width: 3px;
+  border-bottom-color: whitesmoke;
   text-shadow: 2px 2px 2px black;
 }
 

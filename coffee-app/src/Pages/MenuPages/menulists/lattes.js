@@ -10,8 +10,7 @@ export const lattes = [
         carbohydrates:"3g",
         sugar:"0g",
         caffeine:"360mg",
-        protein:"Hundred",
-        mascul: "50g"
+        protein:"0g",
     },
     {
         drink: 'Pumpkin Spice Latte',
@@ -24,7 +23,7 @@ export const lattes = [
         carbohydrates:"3g",
         sugar:"0g",
         protein:"1g",
-        caffeine:"360mg"
+        caffeine:"360mg",
     },
     {
         drink: 'Hazelnut Latte',

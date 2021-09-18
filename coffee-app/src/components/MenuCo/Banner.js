@@ -1,6 +1,6 @@
 import React from 'react'
-import LeftDivider from '../img/LeftDivider.png'
-import RightDivider from '../img/RightDivider.png'
+import LeftDivider from '../img/LeftDivider2.png'
+import RightDivider from '../img/RightDivider2.png'
 import './Banner.css'
 
 const Banner = (props) => {

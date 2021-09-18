@@ -1,0 +1,42 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.spacer {
+  visibility: none;
+}
+
+.bgvideo {
+  position: absolute;
+  object-fit: contain;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  height: 120% !important;
+  z-index: -1;
+}
+
+.storycontent {
+  min-height: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: linear-gradient(
+    45deg,
+    rgba(129, 113, 97, 0.7) 0%,
+    rgb(204, 195, 180, 0.7) 100%
+  );
+  align-content: center;
+  border-left: outset;
+  border-left-color: rgb(204, 195, 180);
+  border-right: outset;
+  border-right-color: rgb(204, 195, 180);
+  color: whitesmoke;
+}

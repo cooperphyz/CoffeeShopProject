@@ -1,14 +1,11 @@
 .menuheading {
-  background: linear-gradient(
-    45deg,
-    rgb(170, 126, 211) 0%,
-    rgb(71, 115, 98) 100%
-  );
+  background: linear-gradient(45deg, #47436d 0%, #47436d 100%);
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   padding-bottom: 0.1%;
   border-image-width: 20px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .menuheading {
@@ -61,7 +58,7 @@ li.menu-item {
 }
 
 .nav-links-menu {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 25px 10px 10px;
 }
 
 .nav-links-menu {

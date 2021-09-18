@@ -1,9 +1,5 @@
 .heading {
-  background: linear-gradient(
-    45deg,
-    rgb(170, 126, 211) 0%,
-    rgb(204, 180, 180) 100%
-  );
+  background: linear-gradient(45deg, #ccc3b4 0%, #ccc3b4 100%);
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;

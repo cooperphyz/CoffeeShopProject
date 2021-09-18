@@ -12,6 +12,7 @@
   border-radius: 5px;
   transform-style: preserve-3d;
   transition: all 0.5s;
+  text-shadow: 2px 2px 2px black;
 }
 .CardComponents:hover {
   box-shadow: 0 8px 16px 0 rgba(231, 137, 209, 0.397);
@@ -45,6 +46,7 @@ h3 {
   height: 5rem;
   font-size: 1.8rem;
   vertical-align: auto;
+  text-shadow: 2px 2px 2px black;
 }
 
 .cardback {

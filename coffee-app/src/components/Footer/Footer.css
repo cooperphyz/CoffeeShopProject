@@ -2,6 +2,7 @@
   justify-content: space-between;
   display: inline-flex;
   color: white;
+  flex-shrink: 0;
 }
 
 .Wrapper {
