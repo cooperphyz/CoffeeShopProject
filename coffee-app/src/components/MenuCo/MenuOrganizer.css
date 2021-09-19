@@ -23,8 +23,10 @@ video {
 
 .menulistings {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 10px;
   column-gap: 8px;
+  row-gap: 8px;
 }

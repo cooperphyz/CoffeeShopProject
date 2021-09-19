@@ -1,4 +1,6 @@
-.CardComponents {
+.CardComponents,
+.front,
+.back {
   width: 15rem;
   background: linear-gradient(
     45deg,
@@ -14,19 +16,25 @@
   transition: all 0.5s;
   text-shadow: 2px 2px 2px black;
 }
-.CardComponents:hover {
+.CardComponents:hover,
+.front:hover,
+.back:hover {
   box-shadow: 0 8px 16px 0 rgba(231, 137, 209, 0.397);
   transition: transform 0.5s ease-in-out;
-  animation: ease-out;
-  transform: scale(0.97);
-  transform: rotateY(180deg);
 }
 
 .cardheader,
 h3 {
   margin: 1rem;
+  margin-top: 1rem;
   height: 4rem;
   color: whitesmoke;
+  text-align: center;
+  margin-left: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .cardimage {
@@ -49,10 +57,8 @@ h3 {
   text-shadow: 2px 2px 2px black;
 }
 
-.cardback {
-  transform: rotateY(180deg);
+.back {
   margin: 0;
-  position: absolute;
   top: 0px;
   right: 0px;
   width: 15rem;
@@ -62,21 +68,20 @@ h3 {
     rgb(138, 185, 167) 100%
   );
   text-decoration: none;
-  max-height: 350px;
-  min-height: 350px;
   border-radius: 5px;
-  transform-style: preserve-3d;
   color: whitesmoke;
+  max-height: 345px;
+  min-height: 345px;
 }
 
-.cardback h5 {
+.back h5 {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.cardback h6 {
+.back h6 {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
