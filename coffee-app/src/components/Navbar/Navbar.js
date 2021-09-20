@@ -5,7 +5,11 @@ import logo from "../img/VGLogoNew.png"
 import './Navbar.css'
 import { Link } from "react-router-dom";
 
+
 class Navbar extends Component {
+    showSettings (event) {
+        event.preventDefault();
+      }
     render() {
         return (
             <nav className="NavbarItems">
@@ -35,6 +39,28 @@ class Navbar extends Component {
                             </li>
                         )
                     })}
+                </ul>
+                <ul className="Hamburger-menu">
+                <ul className="Hamburger-items">
+                    {MenuItemsLeft.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <Link className={item.cNameB} to={item.url}>
+                                    {item.title}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                     {MenuItemsRight.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <Link className={item.cNameB} to={item.url}>
+                                    {item.title}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
                 </ul>
             </nav>
         )

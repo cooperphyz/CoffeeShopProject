@@ -7,9 +7,9 @@ const Column = (props) => {
         <div>
             <h4>{props.title}</h4>
             <div className='columnlinks'>
-            <a href="/#" className = 'links'>{props.link1}</a>
-            <p className = 'links'>{props.link2}</p>
-            <a href="/#" className = 'links'>{props.link3}</a>
+            <a href="/#" className = 'links'>{props.icon1}{props.link1}</a>
+            <p className = 'links'>{props.icon2}{props.link2}</p>
+            <a href="/#" className = 'links'>{props.icon3}{props.link3}</a>
             </div>
         </div>
     )

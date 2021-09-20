@@ -43,3 +43,48 @@
   text-decoration: none;
   transition-duration: 1s;
 }
+
+@media only screen and (max-width: 740px) {
+  .Navbar-menu-right,
+  .Navbar-menu-left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .Hamburger-menu {
+    display: none;
+  }
+}
+
+.Hamburger-menu {
+  float: right;
+  right: 0px;
+  position: absolute;
+  height: 92vh;
+  top: -20px;
+  background: linear-gradient(
+    45deg,
+    rgb(71, 39, 114, 90%) 0%,
+    rgb(71, 115, 98) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  border-left: inset;
+  border-top: outset;
+  border-bottom: outset;
+  border-bottom-width: 3px;
+  width: 50%;
+}
+@media only screen and (min-width: 740px) {
+  .Hamburger-menu {
+    display: none;
+  }
+}
+
+.nav-links-burger {
+  color: white;
+  margin-top: 30px;
+}
