@@ -1,12 +1,30 @@
 import React, { Component } from 'react';
 import { MenuItemsLeft } from "./MenuItemsLeft";
 import { MenuItemsRight } from "./MenuItemsRight";
+import { MenuItemsBurger } from "./MenuItemsBurger";
 import logo from "../img/VGLogoNew.png"
 import './Navbar.css'
 import { Link } from "react-router-dom";
 
-
 class Navbar extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false
+        };
+
+        this.navToggle = this.navToggle.bind(this);
+    }
+
+    navToggle(e) {
+        e.stopPropagation();
+        this.setState({
+            open: !this.state.open
+        });
+        console.log(this.state.open)
+      }
+
     showSettings (event) {
         event.preventDefault();
       }
@@ -40,20 +58,11 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <ul className="Hamburger-menu">
-                <ul className="Hamburger-items">
-                    {MenuItemsLeft.map((item, index) => {
+                {this.state.open && <ul className="Hamburger-menu">
+                <ul className="Hamburger-items">      
+                    {MenuItemsBurger.map((item, index) => {
                         return (
-                            <li key={index}>
-                                <Link className={item.cNameB} to={item.url}>
-                                    {item.title}
-                                </Link>
-                            </li>
-                        )
-                    })}
-                     {MenuItemsRight.map((item, index) => {
-                        return (
-                            <li key={index}>
+                            <li className="nav-links-burger" key={index}>
                                 <Link className={item.cNameB} to={item.url}>
                                     {item.title}
                                 </Link>
@@ -62,6 +71,12 @@ class Navbar extends Component {
                     })}
                 </ul>
                 </ul>
+                }
+                <div class ="burger" onClick={this.navToggle}>
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
             </nav>
         )
     }

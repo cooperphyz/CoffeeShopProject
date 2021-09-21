@@ -77,14 +77,46 @@
   border-bottom: outset;
   border-bottom-width: 3px;
   width: 50%;
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in;
 }
 @media only screen and (min-width: 740px) {
-  .Hamburger-menu {
+  .Hamburger-menu,
+  .burger {
     display: none;
   }
 }
 
+.burger div {
+  width: 33px;
+  height: 5px;
+  background-color: whitesmoke;
+  margin: 6px;
+  box-shadow: black 2px 2px 3px;
+}
+
+.navbar-logo {
+  position: absolute;
+}
+.burger {
+  position: absolute;
+  right: 0;
+  margin-right: 5vh;
+  cursor: pointer;
+}
+
 .nav-links-burger {
   color: white;
-  margin-top: 30px;
+  margin-top: 25%;
+  margin-left: -24%;
+  text-decoration: none;
+  align-items: center;
+  left: 0px;
+  font-size: 3rem;
+}
+
+.nav-links-burger:hover {
+  color: rgb(170, 126, 211);
+  text-decoration: none;
+  transition-duration: 1s;
 }
