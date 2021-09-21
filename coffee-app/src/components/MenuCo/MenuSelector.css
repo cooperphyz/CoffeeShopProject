@@ -71,3 +71,31 @@ li.menu-item {
   text-decoration: none;
   transition-duration: 1s;
 }
+
+.burgerme {
+  position: absolute;
+  margin-left: 5vh;
+  cursor: pointer;
+  left: 0;
+  top: 62px;
+}
+
+.burgerme div {
+  width: 33px;
+  height: 4px;
+  background-color: whitesmoke;
+  margin: 7px;
+  box-shadow: black 2px 2px 3px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .menuheading {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .burgerme {
+    display: none;
+  }
+}

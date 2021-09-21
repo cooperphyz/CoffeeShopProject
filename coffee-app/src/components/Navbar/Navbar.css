@@ -46,14 +46,14 @@
   transition-duration: 1s;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 850px) {
   .Navbar-menu-right,
   .Navbar-menu-left {
     display: none;
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 850px) {
   .Hamburger-menu,
   .Hamburger-close {
     display: none;
@@ -92,7 +92,7 @@
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 850px) {
   .Hamburger-menu,
   .burger {
     display: none;
