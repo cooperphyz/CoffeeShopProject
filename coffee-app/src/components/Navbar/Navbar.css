@@ -18,19 +18,21 @@
 .Navbar-menu-left {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 30px;
   list-style: none;
   text-align: center;
   justify-content: end;
+  margin: 120px;
 }
 
 .Navbar-menu-right {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 30px;
   list-style: none;
   text-align: center;
   justify-content: end;
+  margin: 55px;
 }
 
 .nav-links {
@@ -44,15 +46,16 @@
   transition-duration: 1s;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
   .Navbar-menu-right,
   .Navbar-menu-left {
     display: none;
   }
 }
 
-@media only screen and (min-width: 740px) {
-  .Hamburger-menu {
+@media only screen and (min-width: 760px) {
+  .Hamburger-menu,
+  .Hamburger-close {
     display: none;
   }
 }
@@ -62,7 +65,7 @@
   right: 0px;
   position: absolute;
   height: 92vh;
-  top: -20px;
+  top: -25px;
   background: linear-gradient(
     45deg,
     rgb(71, 39, 114, 90%) 0%,
@@ -77,10 +80,19 @@
   border-bottom: outset;
   border-bottom-width: 3px;
   width: 50%;
-  transform: translateX(0%);
-  transition: transform 0.5s ease-in;
+  animation: slideInAnimation 0.5s;
 }
-@media only screen and (min-width: 740px) {
+
+@keyframes slideInAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media only screen and (min-width: 760px) {
   .Hamburger-menu,
   .burger {
     display: none;
@@ -113,10 +125,24 @@
   align-items: center;
   left: 0px;
   font-size: 3rem;
+  transition: opacity 0.2s ease;
 }
 
 .nav-links-burger:hover {
   color: rgb(170, 126, 211);
   text-decoration: none;
   transition-duration: 1s;
+}
+
+.Hamburger-close {
+  color: white;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+  text-shadow: black 10px 10px 10px;
+  animation: slideInAnimation 0.5s;
 }

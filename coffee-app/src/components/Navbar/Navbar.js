@@ -5,6 +5,7 @@ import { MenuItemsBurger } from "./MenuItemsBurger";
 import logo from "../img/VGLogoNew.png"
 import './Navbar.css'
 import { Link } from "react-router-dom";
+import {AiOutlineCloseCircle} from 'react-icons/ai';
 
 class Navbar extends Component {
 
@@ -58,13 +59,14 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
+                {this.state.open && <AiOutlineCloseCircle className="Hamburger-close" onClick={this.navToggle}/> }
                 {this.state.open && <ul className="Hamburger-menu">
                 <ul className="Hamburger-items">      
                     {MenuItemsBurger.map((item, index) => {
                         return (
                             <li className="nav-links-burger" key={index}>
-                                <Link className={item.cNameB} to={item.url}>
-                                    {item.title}
+                                <Link className={item.cNameB} to={item.url} onClick={this.navToggle}>
+                                    {item.title} 
                                 </Link>
                             </li>
                         )
