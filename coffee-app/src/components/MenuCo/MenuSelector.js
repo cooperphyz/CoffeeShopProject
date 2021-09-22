@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './MenuSelector.css'
 import {MenuOptions} from './MenuOptions'
-
+import {AiOutlineCloseCircle} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 class MenuSelector extends Component {
     constructor(props) {
@@ -16,9 +17,9 @@ class MenuSelector extends Component {
     menuToggle(e) {
         e.stopPropagation();
         this.setState({
+            menuopen: !this.state.menuopen,
             open: !this.state.open
         });
-        console.log(this.state.open)
       }
 
     render () {
@@ -38,12 +39,21 @@ class MenuSelector extends Component {
                     })}
                 <h1>{this.props.heading}</h1>
             </div>
-            {!this.state.menuopen && <div className ="burgerme" onClick={this.menuToggle}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
-            </div>
-                }
+            {!this.state.menuopen && <GiHamburgerMenu className ="burgerme" onClick={this.menuToggle}/>}
+            {this.state.menuopen && <AiOutlineCloseCircle className="Hamburger-close-menu" onClick={this.menuToggle}/> }
+            {this.state.menuopen && <div className ="burger-menu-menu">
+                {MenuOptions.map((item, index) => {
+                        return (
+                            <div className="burger-menu-listings">
+                            <li key={index} className="nav-links-burger-menu">
+                                <Link className={item.cName} to={item.url}>
+                                    {item.title}
+                                </Link>
+                            </li>
+                            </div>
+                        )
+                    })}
+                </div>}
         </div>
     )
 }

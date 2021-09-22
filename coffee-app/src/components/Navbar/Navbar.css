@@ -64,7 +64,7 @@
   float: right;
   right: 0px;
   position: absolute;
-  height: 92vh;
+  height: 450px;
   top: -25px;
   background: linear-gradient(
     45deg,
@@ -79,7 +79,7 @@
   border-top: outset;
   border-bottom: outset;
   border-bottom-width: 3px;
-  width: 50%;
+  width: 42%;
   animation: slideInAnimation 0.5s;
 }
 
@@ -99,12 +99,15 @@
   }
 }
 
-.burger div {
-  width: 33px;
-  height: 5px;
-  background-color: whitesmoke;
-  margin: 6px;
-  box-shadow: black 2px 2px 3px;
+.burger {
+  position: absolute;
+  margin-left: 5vh;
+  cursor: pointer;
+  right: 0;
+  top: 58px;
+  color: white;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar-logo {
@@ -144,5 +147,5 @@
   cursor: pointer;
   z-index: 2;
   text-shadow: black 10px 10px 10px;
-  animation: slideInAnimation 0.5s;
+  animation: slideInAnimation 0.4s;
 }

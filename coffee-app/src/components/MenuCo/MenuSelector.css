@@ -77,15 +77,10 @@ li.menu-item {
   margin-left: 5vh;
   cursor: pointer;
   left: 0;
-  top: 62px;
-}
-
-.burgerme div {
-  width: 33px;
-  height: 4px;
-  background-color: whitesmoke;
-  margin: 7px;
-  box-shadow: black 2px 2px 3px;
+  top: 58px;
+  color: white;
+  width: 40px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 1230px) {
@@ -95,7 +90,73 @@ li.menu-item {
 }
 
 @media only screen and (min-width: 1230px) {
-  .burgerme {
+  .burgerme,
+  .burger-menu-menu {
+    display: none;
+  }
+}
+
+@keyframes slideInAnimationMenu {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.burger-menu-menu {
+  float: left;
+  left: 0px;
+  position: absolute;
+  height: 770px;
+  top: 0px;
+  background: linear-gradient(
+    45deg,
+    rgb(71, 39, 114, 90%) 0%,
+    rgb(71, 115, 98) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  border-right: inset;
+  border-top: outset;
+  border-bottom: outset;
+  border-bottom-width: 3px;
+  width: 50%;
+  animation: slideInAnimationMenu 0.5s;
+}
+
+.Hamburger-close-menu {
+  color: white;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 2;
+  text-shadow: black 10px 10px 10px;
+  animation: slideInAnimationMenu 0.4s;
+}
+
+.nav-links-burger-menu {
+  color: white;
+  margin-top: 25%;
+  margin-right: -10%;
+  text-decoration: none;
+  align-items: center;
+  left: 0px;
+  font-size: 3rem;
+  transition: opacity 0.2s ease;
+  text-shadow: black 2px 2px 2px;
+}
+@media only screen and (min-width: 1230px) {
+  .Hamburger-menu,
+  .burger,
+  .burger-menu-menu,
+  .Hamburger-close-menu {
     display: none;
   }
 }

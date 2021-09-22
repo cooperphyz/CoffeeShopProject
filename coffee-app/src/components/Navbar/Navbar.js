@@ -6,6 +6,7 @@ import logo from "../img/VGLogoNew.png"
 import './Navbar.css'
 import { Link } from "react-router-dom";
 import {AiOutlineCloseCircle} from 'react-icons/ai';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 class Navbar extends Component {
 
@@ -74,11 +75,7 @@ class Navbar extends Component {
                 </ul>
                 </ul>
                 }
-                <div class ="burger" onClick={this.navToggle}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
-                </div>
+                <GiHamburgerMenu className="burger" onClick={this.navToggle}/>
             </nav>
         )
     }
