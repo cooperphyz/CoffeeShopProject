@@ -89,7 +89,7 @@ li.menu-item {
   }
 }
 
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 1231px) {
   .burgerme,
   .burger-menu-menu {
     display: none;
@@ -152,7 +152,7 @@ li.menu-item {
   transition: opacity 0.2s ease;
   text-shadow: black 2px 2px 2px;
 }
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 1231px) {
   .Hamburger-menu,
   .burger,
   .burger-menu-menu,

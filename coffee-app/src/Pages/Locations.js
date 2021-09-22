@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Story() {
+function Locations() {
   return (
     <div className="App">
       
@@ -8,4 +8,4 @@ function Story() {
   );
 }
 
-export default Story;
+export default Locations;

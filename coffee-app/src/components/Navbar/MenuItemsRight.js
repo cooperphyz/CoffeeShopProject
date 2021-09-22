@@ -1,7 +1,7 @@
 export const MenuItemsRight = [
     {
-        title: 'Story',
-        url: '/story',
+        title: 'Locations',
+        url: '/locations',
         cName: 'nav-links',
         cNameB: 'nav-links-burger'
     },
