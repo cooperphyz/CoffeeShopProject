@@ -1,0 +1,52 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.spacer {
+  visibility: none;
+}
+
+.bgvideo {
+  position: fixed;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.maincontent {
+  min-height: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: linear-gradient(
+    45deg,
+    rgba(129, 113, 97, 0.7) 0%,
+    rgb(204, 195, 180, 0.7) 100%
+  );
+  align-content: center;
+  border-left: outset;
+  border-left-color: rgb(204, 195, 180);
+  border-right: outset;
+  border-right-color: rgb(204, 195, 180);
+  color: whitesmoke;
+}
+
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  column-gap: 8px;
+  row-gap: 8px;
+}

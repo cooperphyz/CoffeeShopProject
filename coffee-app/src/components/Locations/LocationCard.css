@@ -1,0 +1,23 @@
+.LocationCardItems {
+  background: linear-gradient(
+    45deg,
+    rgba(100, 86, 64, 0.9) 0%,
+    rgb(182, 162, 137) 100%
+  );
+  width: 30%;
+  min-width: 475px;
+  padding-top: 5px;
+  border-style: outset;
+  border-radius: 2px;
+  text-shadow: black 2px 2px 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: rgb(22, 22, 22) 2px 2px 5px;
+}
+
+.maplocation {
+  width: 90%;
+  height: 430px;
+  border-style: outset;
+  border-radius: 3px;
+}
