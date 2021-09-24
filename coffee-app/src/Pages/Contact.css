@@ -1,0 +1,16 @@
+.contactcontent {
+    min-height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: linear-gradient(
+      45deg,
+      rgba(129, 113, 97, 0.7) 0%,
+      rgb(204, 195, 180, 0.7) 100%
+    );
+    align-content: center;
+    border-left: outset;
+    border-left-color: rgb(204, 195, 180);
+    border-right: outset;
+    border-right-color: rgb(204, 195, 180);
+    color: whitesmoke;
+  }
